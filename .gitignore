@@ -9,3 +9,4 @@ Release*/
 codex_build/
 *.diagsession 
 Output-DiagnosticsHub.txt
+/llc_ro_data/
