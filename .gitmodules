@@ -1,21 +1,20 @@
 [submodule "llc"]
 	path = llc
 	url = https://github.com/asm128/llc
+	branch = llb_proofline
 [submodule "llt"]
 	path = llt
 	url = https://github.com/asm128/llt
-[submodule "zlib"]
-	path = zlib
-	url = https://github.com/asm128/zlib
+	branch = llb_proofline
 [submodule "llc_data"]
 	path = llc_data
 	url = https://github.com/asm128/llc_data
-[submodule "llc_engine"]
-	path = llc_engine
-	url = https://github.com/asm128/llc_engine
+	branch = llb_proofline
 [submodule "llc_samples"]
 	path = llc_samples
 	url = https://github.com/asm128/llc_samples
+	branch = llb_proofline
 [submodule "llc_samples_data"]
 	path = llc_samples_data
 	url = https://github.com/asm128/llc_samples_data
+	branch = llb_proofline
