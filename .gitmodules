@@ -6,9 +6,6 @@
 	path = llt
 	url = https://github.com/asm128/llt
 	branch = llb_gatewatch
-[submodule "zlib"]
-	path = zlib
-	url = https://github.com/asm128/zlib
 [submodule "llc_data"]
 	path = llc_data
 	url = https://github.com/asm128/llc_data
