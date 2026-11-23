@@ -4,7 +4,7 @@ The `llb_conduit` branch pins the matching `llb_conduit` heads of LLC, LLT, LLC 
 
 All 27 `.vcxproj` files use `<AdditionalLibraryDirectories>$(OutDir);</AdditionalLibraryDirectories>` in each Link group. Their `.lib` inputs are bare filenames, with no hard `ProjectReference` elements. The solutions order internal library producers before their consumers. Every declared platform has `Debug-MT` and `Release-MT` project configurations, and the LLT solution no longer maps MT builds to plain Debug or Release output folders.
 
-The full LLC, LLT, and LLC Samples solutions passed Release x64 builds after the library-path edits. LLC Release-MT x64 also passed after the MT configuration edits. The other MT solution builds were still in progress when this evidence was recorded.
+The full LLC, LLT, and LLC Samples solutions passed both Release x64 and Release-MT x64 builds. The MT builds include `llc_nn` and `llc_test_llt` in the matching `x64.Release-MT` output directory. The six [build logs](build_logs/) record the project outputs. Other platforms and configurations have not been runtime verified.
 
 ## LLS ONLINE proof
 
