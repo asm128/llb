@@ -1,7 +1,7 @@
 [submodule "llc"]
 	path = llc
 	url = https://github.com/asm128/llc
-	branch = llb_baseline
+	branch = jen_recovery
 [submodule "llt"]
 	path = llt
 	url = https://github.com/asm128/llt
