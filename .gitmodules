@@ -1,24 +1,24 @@
 [submodule "llc"]
 	path = llc
 	url = https://github.com/asm128/llc
-	branch = llb_wirewright
+	branch = llb_json_benchmarks
 [submodule "llt"]
 	path = llt
 	url = https://github.com/asm128/llt
-	branch = llb_wirewright
+	branch = llb_json_benchmarks
 [submodule "llc_data"]
 	path = llc_data
 	url = https://github.com/asm128/llc_data
-	branch = llb_wirewright
+	branch = llb_json_benchmarks
 [submodule "llc_samples"]
 	path = llc_samples
 	url = https://github.com/asm128/llc_samples
-	branch = llb_wirewright
+	branch = llb_json_benchmarks
 [submodule "llc_samples_data"]
 	path = llc_samples_data
 	url = https://github.com/asm128/llc_samples_data
-	branch = llb_wirewright
+	branch = llb_json_benchmarks
 [submodule "llc_benchmark"]
 	path = llc_benchmark
 	url = https://github.com/asm128/llc_benchmark.git
-	branch = llb_wirewright
+	branch = llb_json_benchmarks
