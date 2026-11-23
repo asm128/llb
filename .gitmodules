@@ -1,7 +1,7 @@
 [submodule "llc"]
 	path = llc
 	url = https://github.com/asm128/llc
-	branch = llb_overload
+	branch = array_operation_wrappers
 [submodule "llt"]
 	path = llt
 	url = https://github.com/asm128/llt
