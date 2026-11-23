@@ -1,20 +1,20 @@
 [submodule "llc"]
 	path = llc
 	url = https://github.com/asm128/llc
-	branch = visible_text_selection
+	branch = llb_baseline
 [submodule "llt"]
 	path = llt
 	url = https://github.com/asm128/llt
-	branch = llc_desktop
+	branch = llb_baseline
 [submodule "llc_data"]
 	path = llc_data
 	url = https://github.com/asm128/llc_data
-	branch = llc_desktop
+	branch = llb_baseline
 [submodule "llc_samples"]
 	path = llc_samples
 	url = https://github.com/asm128/llc_samples
-	branch = visible_text_selection
+	branch = llb_baseline
 [submodule "llc_samples_data"]
 	path = llc_samples_data
 	url = https://github.com/asm128/llc_samples_data
-	branch = llc_desktop
+	branch = llb_baseline
