@@ -18,3 +18,7 @@
 	path = llc_samples_data
 	url = https://github.com/asm128/llc_samples_data
 	branch = llb_wirewright
+[submodule "llc_benchmark"]
+	path = llc_benchmark
+	url = https://github.com/asm128/llc_benchmark.git
+	branch = llb_wirewright
