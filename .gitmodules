@@ -5,7 +5,7 @@
 [submodule "llt"]
 	path = llt
 	url = https://github.com/asm128/llt
-	branch = llb_overload
+	branch = llb_baseline
 [submodule "llc_data"]
 	path = llc_data
 	url = https://github.com/asm128/llc_data
