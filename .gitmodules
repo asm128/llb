@@ -22,3 +22,12 @@
 	path = llc_benchmark
 	url = https://github.com/asm128/llc_benchmark.git
 	branch = llb_json_benchmarks
+[submodule "jsoncpp"]
+	path = jsoncpp
+	url = https://github.com/open-source-parsers/jsoncpp.git
+[submodule "nlohmann_json"]
+	path = nlohmann_json
+	url = https://github.com/nlohmann/json.git
+[submodule "rapidjson"]
+	path = rapidjson
+	url = https://github.com/Tencent/rapidjson.git
