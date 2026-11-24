@@ -2,12 +2,22 @@ param(
     [string[]]$Root,
     [switch]$Apply,
     [switch]$All,
+    [switch]$Help,
     [string]$LogPath = (Join-Path (Get-Location).Path 'Normalize-RetiredAliases.log')
 )
 
 $ErrorActionPreference = 'Stop'
-if(-not $Root) {
-    throw 'Specify one or more source directories with -Root. The script does not select a checkout.'
+if($Help -or -not $Root) {
+    @'
+Normalize-RetiredAliases.ps1 [-Root <source-directory>] [-Apply] [-All] [-LogPath <log-file>] [-Help]
+
+Without -Apply, previews changes without editing files. -Apply writes the changes.
+-Root selects the checkout or source directory to scan; the script never selects one for you.
+-LogPath writes the full per-file, before/after line log (default: ./Normalize-RetiredAliases.log).
+-All also lists unchanged and skipped files. -Help shows this message.
+The log directory must already exist. Review the preview and your Git diff before committing.
+'@
+    return
 }
 foreach($rootPath in $Root) { if(-not (Test-Path -LiteralPath $rootPath -PathType Container)) { throw "Missing source root: $rootPath" } }
 $hasEventDeviceHeader = @(Get-ChildItem -LiteralPath $Root -Recurse -File -Filter 'llc_event_device.h' -ErrorAction SilentlyContinue).Count -gt 0
