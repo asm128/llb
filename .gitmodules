@@ -13,7 +13,7 @@
 [submodule "llc_samples"]
 	path = llc_samples
 	url = https://github.com/asm128/llc_samples
-	branch = llb_baseline
+	branch = proofline_dashboard_fix
 [submodule "llc_samples_data"]
 	path = llc_samples_data
 	url = https://github.com/asm128/llc_samples_data
