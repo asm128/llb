@@ -1,7 +1,7 @@
 [submodule "llc"]
 	path = llc
 	url = https://github.com/asm128/llc
-	branch = framebuffer_screenshot_capture
+	branch = llb_baseline
 [submodule "llt"]
 	path = llt
 	url = https://github.com/asm128/llt
@@ -13,7 +13,7 @@
 [submodule "llc_samples"]
 	path = llc_samples
 	url = https://github.com/asm128/llc_samples
-	branch = framebuffer_screenshot_capture
+	branch = llb_baseline
 [submodule "llc_samples_data"]
 	path = llc_samples_data
 	url = https://github.com/asm128/llc_samples_data
