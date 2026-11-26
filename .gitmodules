@@ -1,11 +1,11 @@
 [submodule "llc"]
 	path = llc
 	url = https://github.com/asm128/llc
-	branch = framebuffer_screenshot_capture
+	branch = event_string_views
 [submodule "llt"]
 	path = llt
 	url = https://github.com/asm128/llt
-	branch = llb_baseline
+	branch = client_server_copies
 [submodule "llc_data"]
 	path = llc_data
 	url = https://github.com/asm128/llc_data
