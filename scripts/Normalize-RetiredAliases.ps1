@@ -101,6 +101,7 @@ $map = [ordered]@{
     'stacxpr' = 'stxp'
     'stainli' = 'stin'
     'stincxp' = 'sinx'
+    'astchar' = 'sstring'
     'tplTndstcxp' = 'tplTndsx'
     'tplTndstinx' = 'tplTnsix'
     'tplTstacxpr' = 'tplTstxp'
@@ -147,10 +148,9 @@ $map = [ordered]@{
     'if_truif_true_e' = 'if_true_if'
     'tplN2uinxp' = 'tplN2u inxp'
     'kvvcst' = 'kvvcst_t'
-    'astchar' = 'astsc_t'
-    'astc' = 'astsc_t'
+    'astc' = 'sstring	'
     'astaticc' = 'astsc_t'
-    'astuc' = 'astuc_t'
+    'astuc' = 'astu0_t'
     'astaticuc' = 'astuc_t'
     'astu8' = 'astu0_t'
     'astu16' = 'astu1_t'
@@ -213,14 +213,6 @@ Write-Feedback ("ROOT $rootPath")
 $files = Get-ChildItem -LiteralPath $rootPath -Recurse -File |
     Where-Object { $_.Extension -in @('.h', '.cpp', '.hpp') -and $_.FullName -notmatch '[\\/](obj|x64\.[^\\/]+)[\\/]' }
 foreach($file in $files) {
-    if($file.Name -in @('llc_platform_globals.h', 'llc_typeint.h', 'llc_error.h', 'llc_string_compose.h') -or $file.Name -like 'llc_log*.h') {
-        ++$skippedFiles
-        if($All) {
-            Write-Feedback ("FILE $($file.FullName)")
-            Write-Feedback '  STATUS SKIPPED: owning definition header'
-        }
-        continue
-    }
     ++$totalFiles
     $before = [System.IO.File]::ReadAllText($file.FullName)
     $after = if($hasFrameworkModuleHeader) { [regex]::Replace($before, '(?m)^(?<prefix>[ \t]*#include[ \t]+)"llc_runtime_module\.h"', '${prefix}"llc_framework_module.h"') }
